@@ -1681,11 +1681,6 @@
   dependencies:
     jest-diff "^24.3.0"
 
-"@types/jsmediatags@^3.9.1":
-  version "3.9.1"
-  resolved "https://registry.yarnpkg.com/@types/jsmediatags/-/jsmediatags-3.9.1.tgz#f58c31ff2ec8b3d81bafd0b91615ab728bb6edd7"
-  integrity sha512-BtCtPS+6yhG2bEO3ExjsjEX19KGrfKykTDhHhZgrwBJjC9caGCvabRh3wVXcmlBKFMjHPFYMtinPZ4HPJ7q3og==
-
 "@types/json-schema@^7.0.3":
   version "7.0.4"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.4.tgz#38fd73ddfd9b55abb1e1b2ed578cb55bd7b7d339"
@@ -6806,13 +6801,6 @@ jsesc@~0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-0.5.0.tgz#e7dee66e35d6fc16f710fe91d5cf69f70f08911d"
   integrity sha1-597mbjXW/Bb3EP6R1c9p9w8IkR0=
-
-jsmediatags@^3.9.3:
-  version "3.9.3"
-  resolved "https://registry.yarnpkg.com/jsmediatags/-/jsmediatags-3.9.3.tgz#309632d221d701bd385df65c9c6840cb399e11ff"
-  integrity sha512-h53yFnPYF1Y5jwr2ebcVzIIsvRpSalm0jhNiJDUztoPPHGpuHxi9YHUzdDgiw+ykiinXHd1s6HSIbudHw79zQw==
-  dependencies:
-    xhr2 "^0.1.4"
 
 json-parse-better-errors@^1.0.1, json-parse-better-errors@^1.0.2:
   version "1.0.2"
@@ -12074,11 +12062,6 @@ ws@^6.1.2, ws@^6.2.1:
   integrity sha512-GIyAXC2cB7LjvpgMt9EKS2ldqr0MTrORaleiOno6TweZ6r3TKtoFQWay/2PceJ3RuBasOHzXNn5Lrw1X0bEjqA==
   dependencies:
     async-limiter "~1.0.0"
-
-xhr2@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/xhr2/-/xhr2-0.1.4.tgz#7f87658847716db5026323812f818cadab387a5f"
-  integrity sha1-f4dliEdxbbUCYyOBL4GMras4el8=
 
 xml-name-validator@^3.0.0:
   version "3.0.0"
