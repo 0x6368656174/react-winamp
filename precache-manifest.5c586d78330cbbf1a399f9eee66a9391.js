@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "720fe32faebd7db87a42b6e697a7f09a",
+    "revision": "3be185eca7a881e8c831ab3f6e6a29ac",
     "url": "/react-winamp/index.html"
   },
   {
-    "revision": "cc8d9e1faf2f6650c627",
-    "url": "/react-winamp/static/css/main.69673f9b.chunk.css"
+    "revision": "a7bc91d927f24e4e5912",
+    "url": "/react-winamp/static/css/main.f29ab88d.chunk.css"
   },
   {
-    "revision": "24ed7a11711d914a451b",
-    "url": "/react-winamp/static/js/2.ffa5ee0f.chunk.js"
+    "revision": "940523d35cfc8fd89bf4",
+    "url": "/react-winamp/static/js/2.0f003d04.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/react-winamp/static/js/2.ffa5ee0f.chunk.js.LICENSE.txt"
+    "url": "/react-winamp/static/js/2.0f003d04.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cc8d9e1faf2f6650c627",
-    "url": "/react-winamp/static/js/main.06d68574.chunk.js"
+    "revision": "a7bc91d927f24e4e5912",
+    "url": "/react-winamp/static/js/main.8dd69a68.chunk.js"
   },
   {
     "revision": "8d28e736a61ad20a2b86",

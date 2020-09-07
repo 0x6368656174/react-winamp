@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-winamp/precache-manifest.ae1d106e43a1cf6d10ceecaa9c6c8253.js"
+  "/react-winamp/precache-manifest.5c586d78330cbbf1a399f9eee66a9391.js"
 );
 
 self.addEventListener('message', (event) => {
