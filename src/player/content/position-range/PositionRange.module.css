@@ -1,14 +1,19 @@
 .range {
   appearance: none;
   background-color: transparent;
-  height: 18px;
   margin: 0;
   outline: none;
   position: relative;
   width: 100%;
+  z-index: 1;
 }
 
-.range::before {
+.track {
+  height: 18px;
+  position: relative;
+}
+
+.track::before {
   background: rgba(30, 28, 61, 0.6);
   border-radius: 24px;
   bottom: 0;
@@ -19,7 +24,7 @@
   top: 0;
 }
 
-.range::after {
+.track::after {
   background: linear-gradient(90deg, #151521 15.63%, #302e4b 44.79%, #31304d 78.13%, #1b1b2b 100%),
     #312f4c;
   bottom: 0;
@@ -45,5 +50,23 @@
 }
 
 .range::-webkit-slider-thumb:active {
+  background-image: url('./thumb-active.png');
+}
+
+.range::-moz-range-thumb {
+  appearance: none;
+  background-color: transparent;
+  background-image: url('./thumb.png');
+  background-size: cover;
+  border-style: none;
+  height: 22px;
+  image-rendering: pixelated;
+  margin-top: 1px;
+  position: relative;
+  width: 58px;
+  z-index: 1;
+}
+
+.range::-moz-range-thumb:active {
   background-image: url('./thumb-active.png');
 }

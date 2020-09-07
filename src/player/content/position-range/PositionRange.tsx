@@ -24,7 +24,7 @@ function PositionRange(props: PositionRangeProps) {
   };
 
   return (
-    <>
+    <div className={styles.track}>
       <input
         {...props}
         value={value}
@@ -33,7 +33,7 @@ function PositionRange(props: PositionRangeProps) {
         className={[styles.range].join(' ')}
         type="range"
       />
-    </>
+    </div>
   );
 }
 

@@ -45,14 +45,21 @@
   width: 24px;
 }
 
-.buttonPlay {
-  background-image: url('./icon-play.png');
+.buttonPlay,
+.buttonPause,
+.buttonStop {
   background-size: cover;
   image-rendering: pixelated;
 }
 
+.buttonPlay {
+  background-image: url('./icon-play.png');
+}
+
 .buttonPause {
   background-image: url('./icon-pause.png');
-  background-size: cover;
-  image-rendering: pixelated;
+}
+
+.buttonStop {
+  background-image: url('./icon-stop.png');
 }

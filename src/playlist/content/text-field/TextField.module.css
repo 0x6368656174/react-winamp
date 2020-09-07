@@ -1,0 +1,21 @@
+.textField {
+  align-items: center;
+  background-color: #000;
+  box-sizing: border-box;
+  color: #00fa00;
+  display: flex;
+  font-size: 14px;
+  height: 100%;
+  padding-left: 3px;
+  padding-right: 3px;
+  width: 100%;
+}
+
+.text {
+  margin-top: -2px;
+}
+
+.alightRight {
+  text-align: right;
+  width: 100%;
+}

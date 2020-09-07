@@ -1,0 +1,43 @@
+.fileList {
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+}
+
+.files {
+  list-style: none;
+  margin: 0;
+  padding: 6px;
+}
+
+.fileButton {
+  appearance: none;
+  background-color: transparent;
+  border-style: none;
+  color: #00fa00;
+  display: flex;
+  font-family: pixelmix, sans-serif;
+  font-size: 14px;
+  outline: none;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  width: 100%;
+}
+
+.fileButton:focus {
+  background-color: rgb(15 0 198);
+}
+
+.currentFile {
+  color: #fff;
+}
+
+.fileNumber {
+  margin-right: 6px;
+  text-align: right;
+  width: 24px;
+}
+
+.fileName {
+  margin-right: auto;
+}

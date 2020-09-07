@@ -17,24 +17,34 @@ function Status() {
   const duration = useSelector(selectDuration);
   const position = useSelector(selectPosition);
   const freq = useSelector(selectFreq);
-  const isPlayed = useSelector(selectState) === 'played';
+  const state = useSelector(selectState);
   const showTimeLeft = useSelector(selectShowTimeLeft);
 
   const dispatch = useDispatch();
 
+  let buttonStyle;
+  switch (state) {
+    case 'paused':
+      buttonStyle = styles.buttonPause;
+      break;
+    case 'stopped':
+      buttonStyle = styles.buttonStop;
+      break;
+    case 'played':
+      buttonStyle = styles.buttonPlay;
+      break;
+  }
+
   return (
     <div className={['withBorder', styles.status].join(' ')}>
       <img className={styles.lcd} src={lcd} alt="LCD buttons" />
-      <button
-        className={[styles.button, isPlayed ? styles.buttonPause : styles.buttonPlay].join(' ')}
-      >
-        Play
-      </button>
+      <button className={[styles.button, buttonStyle].join(' ')}>Play</button>
       <div className={styles.time}>
         <Time
           position={position}
           duration={duration}
           showTimeLeft={showTimeLeft}
+          state={state}
           onClick={() => dispatch(showTimeLeftToggled())}
         />
       </div>

@@ -1,19 +1,28 @@
 import React from 'react';
 import styles from './App.module.css';
+import { selectPlaylistVisible } from './appSlice';
 import Player from './player/Player';
-import { Provider } from 'react-redux';
+import { Provider, useSelector } from 'react-redux';
 import Playlist from './playlist/Playlist';
 import store from './store';
+
+function Main() {
+  const playlistVisible = useSelector(selectPlaylistVisible);
+
+  return (
+    <div className={styles.app}>
+      <div className={styles.player}>
+        <Player />
+        {playlistVisible && <Playlist />}
+      </div>
+    </div>
+  );
+}
 
 function App() {
   return (
     <Provider store={store}>
-      <div className={styles.app}>
-        <div className={styles.player}>
-          <Player />
-          <Playlist />
-        </div>
-      </div>
+      <Main />
     </Provider>
   );
 }

@@ -23,24 +23,28 @@
 }
 
 .staticMediaInfo {
-  height: 34px;
+  height: 35px;
   image-rendering: pixelated;
   margin-top: 10px;
   object-fit: cover;
-  width: 301px;
+  width: 309px;
 }
 
 .rightInfo {
   display: flex;
   flex-direction: column;
   margin-left: 12px;
-  margin-right: 8px;
   width: 100%;
+}
+
+.songName {
+  margin-right: 8px;
 }
 
 .controls {
   align-items: center;
   display: flex;
+  margin-right: 8px;
 }
 
 .volumeControl {

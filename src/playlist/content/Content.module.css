@@ -1,0 +1,76 @@
+.content {
+  display: grid;
+  grid-row-gap: 16px;
+  grid-template-areas: 'file-list file-list file-list file-list file-list border1 scroll' 'bottom-buttons border2 controls border3 list-options border1 scroll';
+  grid-template-columns: 220px 15px 1fr 12px 68px 10px 16px;
+  grid-template-rows: 1fr 43px;
+  height: 405px;
+  padding: 6px;
+}
+
+.fileList,
+.buttonGroup,
+.playbackControls,
+.buttonListOptions,
+.scroll,
+.resizeCorner {
+  image-rendering: pixelated;
+  object-fit: contain;
+}
+
+.fileList {
+  grid-area: file-list;
+}
+
+.buttonGroup {
+  grid-area: bottom-buttons;
+  height: 35px;
+  width: 220px;
+}
+
+.playbackControls {
+  grid-area: controls;
+  height: 100%;
+  width: 100%;
+}
+
+.buttonListOptions {
+  grid-area: list-options;
+  height: 35px;
+  width: 49px;
+}
+
+.scroll {
+  grid-area: scroll;
+  height: 370px;
+  width: 16px;
+}
+
+.resizeCorner {
+  bottom: 6px;
+  height: 26px;
+  position: absolute;
+  right: 6px;
+  width: 26px;
+}
+
+.row {
+  align-items: center;
+  display: flex;
+}
+
+.playDuration {
+  height: 24px;
+  margin-bottom: 3px;
+  width: 100%;
+}
+
+.playlistDuration {
+  height: 20px;
+  margin-left: auto;
+  width: 62px;
+}
+
+.controls {
+  width: 100%;
+}

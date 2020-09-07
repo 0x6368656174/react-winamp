@@ -1,0 +1,51 @@
+.prev,
+.play,
+.pause,
+.stop,
+.next,
+.eject {
+  appearance: none;
+  background-color: transparent;
+  background-size: cover;
+  border-style: none;
+  color: transparent;
+  height: 13px;
+  image-rendering: pixelated;
+  margin-right: 6px;
+  outline: none;
+  width: 13px;
+}
+
+.prev {
+  background-image: url('./button-prev.png');
+}
+
+.play {
+  background-image: url('./button-play.png');
+}
+
+.pause {
+  background-image: url('./button-pause.png');
+}
+
+.stop {
+  background-image: url('./button-stop.png');
+}
+
+.next {
+  background-image: url('./button-next.png');
+}
+
+.eject {
+  background-image: url('./button-eject.png');
+  margin-right: 0;
+}
+
+.prev:active,
+.play:active,
+.pause:active,
+.stop:active,
+.next:active,
+.eject:active {
+  opacity: 0.6;
+}

@@ -7,6 +7,8 @@ interface RangeProps {
   max?: number;
   min?: number;
   onChange?: (event: React.SyntheticEvent<HTMLInputElement>) => void;
+  onMouseDown?: (event: React.SyntheticEvent<HTMLInputElement>) => void;
+  onMouseUp?: (event: React.SyntheticEvent<HTMLInputElement>) => void;
 }
 
 function Range(props: RangeProps) {
@@ -32,14 +34,16 @@ function Range(props: RangeProps) {
   const max = props.max ?? 100;
 
   return (
-    <>
+    <div className={[styles['range' + colorNumber], styles.track].join(' ')}>
       <input
         {...props}
         min={min}
         max={max}
         value={value}
         onChange={handleChange}
-        className={[styles['range' + colorNumber], styles.range].join(' ')}
+        onMouseDown={props.onMouseDown}
+        onMouseUp={props.onMouseUp}
+        className={[styles.range].join(' ')}
         type="range"
         list={min * max < 0 ? listIdRef.current : undefined}
       />
@@ -48,7 +52,7 @@ function Range(props: RangeProps) {
           <option value={0} />
         </datalist>
       )}
-    </>
+    </div>
   );
 }
 

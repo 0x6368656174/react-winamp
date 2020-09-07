@@ -5,10 +5,14 @@ interface TimePros {
   position: number;
   duration: number;
   showTimeLeft: boolean;
+  state?: 'played' | 'stopped' | 'paused';
   onClick?: (event: React.SyntheticEvent<HTMLDivElement>) => void;
 }
 
 function Time(props: TimePros) {
+  const isPaused = props.state === 'paused';
+  const isStopped = props.state === 'stopped';
+
   const images = timeToImages(
     props.showTimeLeft ? props.duration - props.position : props.position,
     props.showTimeLeft
@@ -22,15 +26,49 @@ function Time(props: TimePros) {
         <div className={styles.noDash} />
       )}
 
-      <div className={[styles.number, styles.firstNumber, styles['number' + images[0]]].join(' ')}>
+      <div
+        className={[
+          styles.number,
+          isPaused ? styles.isPause : '',
+          styles.firstNumber,
+          isStopped ? styles.isStop : '',
+          styles['number' + images[0]],
+        ].join(' ')}
+      >
         {images[0]}
       </div>
-      <div className={[styles.number, styles['number' + images[1]]].join(' ')}>{images[1]}</div>
+      <div
+        className={[
+          styles.number,
+          isPaused ? styles.isPause : '',
+          isStopped ? styles.isStop : '',
+          styles['number' + images[1]],
+        ].join(' ')}
+      >
+        {images[1]}
+      </div>
       <div className={styles.dots}>:</div>
-      <div className={[styles.number, styles.firstNumber, styles['number' + images[2]]].join(' ')}>
+      <div
+        className={[
+          styles.number,
+          isPaused ? styles.isPause : '',
+          isStopped ? styles.isStop : '',
+          styles.firstNumber,
+          styles['number' + images[2]],
+        ].join(' ')}
+      >
         {images[2]}
       </div>
-      <div className={[styles.number, styles['number' + images[3]]].join(' ')}>{images[3]}</div>
+      <div
+        className={[
+          styles.number,
+          isPaused ? styles.isPause : '',
+          isStopped ? styles.isStop : '',
+          styles['number' + images[3]],
+        ].join(' ')}
+      >
+        {images[3]}
+      </div>
     </div>
   );
 }

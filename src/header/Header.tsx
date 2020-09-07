@@ -6,6 +6,7 @@ import playlistLogo from './playlist-logo.png';
 
 export interface HeaderProps {
   title?: 'WINAMP' | 'WINAMP PLAYLIST';
+  onCloseClick?: (event: React.SyntheticEvent<HTMLButtonElement>) => void;
 }
 
 function Header(props: HeaderProps) {
@@ -29,7 +30,12 @@ function Header(props: HeaderProps) {
           <button className={[styles.button, styles.buttonMin].join(' ')}>Minimize</button>
         )}
         <button className={[styles.button, styles.buttonMax].join(' ')}>Maximize</button>
-        <button className={[styles.button, styles.buttonClose].join(' ')}>Close</button>
+        <button
+          className={[styles.button, styles.buttonClose].join(' ')}
+          onClick={props.onCloseClick}
+        >
+          Close
+        </button>
       </div>
     </header>
   );

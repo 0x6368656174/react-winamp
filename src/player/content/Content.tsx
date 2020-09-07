@@ -8,6 +8,7 @@ import Range from './range/Range';
 import SongName from './song-name/SongName';
 import Status from './status/Status';
 import staticMediaInfo from './static-media-info.png';
+import staticMediaInfoStopped from './static-media-info-stopped.png';
 import winampLogo from './winamp-logo.png';
 import {
   play,
@@ -20,7 +21,18 @@ import {
   volumeChanged,
   balanceChanged,
   selectDuration,
-  selectCurrentSongName,
+  selectCurrentSong,
+  nextSong,
+  selectShuffleEnabled,
+  selectRepeatEnabled,
+  shuffleEnabledChanged,
+  repeatEnabledChanged,
+  selectState,
+  messageTextChanged,
+  selectMessageText,
+  selectCurrentSongNumber,
+  selectPlaylistVisible,
+  playlistVisibleChanged,
 } from '../../appSlice';
 
 function Content() {
@@ -28,9 +40,36 @@ function Content() {
   const position = useSelector(selectPosition);
   const volume = useSelector(selectVolume) * 100;
   const balance = useSelector(selectBalance);
-  const audioName = useSelector(selectCurrentSongName);
+  const currentSongNumber = useSelector(selectCurrentSongNumber);
+  const currentSong = useSelector(selectCurrentSong);
+  const shuffleEnabled = useSelector(selectShuffleEnabled);
+  const repeatEnabled = useSelector(selectRepeatEnabled);
+  const isStopped = useSelector(selectState) === 'stopped';
+  const messageText = useSelector(selectMessageText);
+  const playlistVisible = useSelector(selectPlaylistVisible);
 
   const dispatch = useDispatch();
+
+  const handleVolumeMouseDown = (event: React.SyntheticEvent<HTMLInputElement>) => {
+    dispatch(messageTextChanged(`VOLUME: ${Math.floor(Number(event.currentTarget.value))}%`));
+  };
+  const handleVolumeMouseUp = (event: React.SyntheticEvent<HTMLInputElement>) => {
+    dispatch(messageTextChanged(''));
+  };
+  const handleBalanceMouseDown = (event: React.SyntheticEvent<HTMLInputElement>) => {
+    let balanceText = 'CENTER';
+    const value = Math.floor(Number(event.currentTarget.value));
+    if (value < 0) {
+      balanceText = `${-1 * value}% LEFT`;
+    } else if (value > 0) {
+      balanceText = `${value}% RIGHT`;
+    }
+
+    dispatch(messageTextChanged(`BALANCE: ${balanceText}`));
+  };
+  const handleBalanceMouseUp = (event: React.SyntheticEvent<HTMLInputElement>) => {
+    dispatch(messageTextChanged(''));
+  };
 
   return (
     <div>
@@ -41,9 +80,18 @@ function Content() {
           </div>
 
           <div className={styles.rightInfo}>
-            <SongName name={audioName} />
+            <div className={styles.songName}>
+              <SongName
+                name={currentSongNumber + 1 + '. ' + currentSong.name}
+                messageText={messageText}
+              />
+            </div>
 
-            <img className={styles.staticMediaInfo} src={staticMediaInfo} alt="Media info" />
+            <img
+              className={styles.staticMediaInfo}
+              src={isStopped ? staticMediaInfoStopped : staticMediaInfo}
+              alt="Media info"
+            />
 
             <div className={styles.controls}>
               <div className={styles.volumeControl}>
@@ -52,6 +100,8 @@ function Content() {
                   onChange={(event) =>
                     dispatch(volumeChanged(Number(event.currentTarget.value) / 100))
                   }
+                  onMouseDown={handleVolumeMouseDown}
+                  onMouseUp={handleVolumeMouseUp}
                 />
               </div>
               <div className={styles.balanceControl}>
@@ -60,13 +110,19 @@ function Content() {
                   min={-100}
                   max={100}
                   onChange={(event) => dispatch(balanceChanged(Number(event.currentTarget.value)))}
+                  onMouseDown={handleBalanceMouseDown}
+                  onMouseUp={handleBalanceMouseUp}
                 />
               </div>
               <div className={styles.eq}>
                 <Checkbox label="eq" />
               </div>
               <div className={styles.pl}>
-                <Checkbox label="pl" />
+                <Checkbox
+                  label="pl"
+                  value={playlistVisible}
+                  onChange={(value) => dispatch(playlistVisibleChanged(value))}
+                />
               </div>
             </div>
           </div>
@@ -84,11 +140,11 @@ function Content() {
 
         <div className={styles.lastRow}>
           <div className={styles.firstPlaybackControls}>
-            <PlaybackControlButton type="prev" />
+            <PlaybackControlButton type="prev" onClick={() => dispatch(nextSong(-1))} />
             <PlaybackControlButton type="play" onClick={() => dispatch(play())} />
             <PlaybackControlButton type="pause" onClick={() => dispatch(pause())} />
             <PlaybackControlButton type="stop" onClick={() => dispatch(stop())} />
-            <PlaybackControlButton type="next" />
+            <PlaybackControlButton type="next" onClick={() => dispatch(nextSong(1))} />
           </div>
 
           <div className={styles.ejectControl}>
@@ -96,11 +152,19 @@ function Content() {
           </div>
 
           <div className={styles.shuffle}>
-            <Checkbox label="shuffle" />
+            <Checkbox
+              label="shuffle"
+              value={shuffleEnabled}
+              onChange={(value) => dispatch(shuffleEnabledChanged(value))}
+            />
           </div>
 
           <div className={styles.repeat}>
-            <Checkbox label="repeat" />
+            <Checkbox
+              label="repeat"
+              value={repeatEnabled}
+              onChange={(value) => dispatch(repeatEnabledChanged(value))}
+            />
           </div>
 
           <img className={styles.winampLogo} src={winampLogo} alt="WINAMP logo" />

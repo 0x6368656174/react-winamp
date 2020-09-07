@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Window from '../window/Window';
 import Content from './content/Content';
-import './styles.css';
 import {
   selectCurrentSong,
   selectState,
@@ -12,6 +11,7 @@ import {
   selectBalance,
   selectPosition,
   freqChanged,
+  nextSong,
 } from '../appSlice';
 
 function Player() {
@@ -19,6 +19,21 @@ function Player() {
   const audioRef = useRef<HTMLAudioElement>(null);
   const state = useSelector(selectState);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) {
+      throw new Error('Not found audio');
+    }
+
+    if (state === 'played') {
+      audio.play();
+    }
+
+    return () => {
+      audio.pause();
+    };
+  }, [state, currentSong, audioRef]);
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -55,6 +70,10 @@ function Player() {
   const analyserNodeRef = useRef<AnalyserNode>();
   const balance = useSelector(selectBalance);
   useEffect(() => {
+    if (!window.AudioContext) {
+      return;
+    }
+
     if (!stereoNodeRef.current) {
       const audio = audioRef.current;
       if (!audio) {
@@ -119,7 +138,7 @@ function Player() {
   }, [audioRef, position]);
 
   const updatePosition = (event: React.SyntheticEvent<HTMLAudioElement>) => {
-    dispatch(positionChanged(event.currentTarget.currentTime));
+    dispatch(positionChanged(Math.floor(event.currentTarget.currentTime)));
   };
 
   const updateDuration = (event: React.SyntheticEvent<HTMLAudioElement>) => {
@@ -134,11 +153,12 @@ function Player() {
 
       <audio
         ref={audioRef}
-        src={currentSong}
+        src={currentSong.path}
         onPlay={updatePosition}
         onSeeked={updatePosition}
         onTimeUpdate={updatePosition}
         onLoadedData={updateDuration}
+        onEnded={() => dispatch(nextSong(1))}
       />
     </div>
   );
