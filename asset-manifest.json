@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9a44ac87.chunk.css",
+    "main.js": "/static/js/main.0596cbf4.chunk.js",
+    "main.js.map": "/static/js/main.0596cbf4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8edfa58f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8edfa58f.js.map",
+    "static/js/2.ffa5ee0f.chunk.js": "/static/js/2.ffa5ee0f.chunk.js",
+    "static/js/2.ffa5ee0f.chunk.js.map": "/static/js/2.ffa5ee0f.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.9236e1d8a023b9b03a377bc46c07bf49.js": "/precache-manifest.9236e1d8a023b9b03a377bc46c07bf49.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.9a44ac87.chunk.css.map": "/static/css/main.9a44ac87.chunk.css.map",
+    "static/js/2.ffa5ee0f.chunk.js.LICENSE.txt": "/static/js/2.ffa5ee0f.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/pixelmix.2db009d8.ttf",
+    "static/media/static-media-info.png": "/static/media/static-media-info.ef452f5a.png",
+    "static/media/App.module.css": "/static/media/windows-xp.2cdbcfc4.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8edfa58f.js",
+    "static/js/2.ffa5ee0f.chunk.js",
+    "static/css/main.9a44ac87.chunk.css",
+    "static/js/main.0596cbf4.chunk.js"
+  ]
+}
