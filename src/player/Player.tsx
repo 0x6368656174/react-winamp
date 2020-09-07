@@ -31,7 +31,7 @@ function Player() {
     }
 
     return () => {
-      audio.pause();
+      // audio.pause();
     };
   }, [state, currentSong, audioRef]);
 

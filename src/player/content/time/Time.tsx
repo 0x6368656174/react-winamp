@@ -20,7 +20,7 @@ function Time(props: TimePros) {
 
   return (
     <div className={styles.time} onClick={props.onClick}>
-      {props.showTimeLeft ? (
+      {props.showTimeLeft && !isStopped ? (
         <div className={styles.dash}>-</div>
       ) : (
         <div className={styles.noDash} />
@@ -75,13 +75,13 @@ function Time(props: TimePros) {
 
 function timeToImages(time: number, secondsCeil: boolean): [number, number, number, number] {
   const minutes = Math.floor(time / 60);
-  const seconds = time % 60;
+  const seconds = secondsCeil ? Math.ceil(time % 60) : Math.floor(time % 60);
 
   return [
     Math.floor(minutes / 10),
     Math.floor(minutes % 10),
     Math.floor(seconds / 10),
-    secondsCeil ? Math.ceil(seconds % 10) : Math.floor(seconds % 10),
+    Math.floor(seconds % 10),
   ];
 }
 

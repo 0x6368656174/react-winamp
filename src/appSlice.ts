@@ -126,7 +126,11 @@ export const appSlice = createSlice({
       state.freq = [];
     },
     pause: (state) => {
-      state.state = 'paused';
+      if (state.state === 'paused') {
+        state.state = 'played';
+      } else {
+        state.state = 'paused';
+      }
     },
     durationChanged: (state, action) => {
       state.duration = action.payload;
@@ -159,7 +163,11 @@ export const appSlice = createSlice({
       }
     },
     freqChanged: (state, action) => {
-      state.freq = action.payload;
+      if (state.state !== 'stopped') {
+        state.freq = action.payload;
+      } else {
+        state.freq = [];
+      }
     },
     nextSong: (state, action) => {
       const nextSongNumber = getNextSong(

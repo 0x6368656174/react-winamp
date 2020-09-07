@@ -14,67 +14,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3314b099-197a-4794-a2a8-93b7b193c2bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/songs/1550601254_.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/songs/50-cent_in-da-club.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/songs/MomentOfSurrender.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/songs/britney-spears_toxic.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/songs/eminem_stan.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/songs/franz-ferdinand_take-me-out.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/songs/gorillaz_clint-eastwood.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/songs/green-day_american-idiot.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/songs/jay-z_99-problems.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/songs/kanye-west_gold-digger.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/songs/lady-gaga_poker-face.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/songs/madonna_hung-up.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/songs/pink_get-the-party-started.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/songs/radiohead_everything-in-its-right-place.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/songs/u2_moment-of-surrender.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/player/content/static-media-info-stopped.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/player/content/status/icon-stop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playlist/content/Content.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playlist/content/Content.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playlist/content/button-group.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playlist/content/button-list-option.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playlist/content/file-list/FileList.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playlist/content/file-list/FileList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playlist/content/playback-controls/PlaybackControls.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playlist/content/playback-controls/PlaybackControls.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playlist/content/playback-controls/button-eject.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playlist/content/playback-controls/button-next.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playlist/content/playback-controls/button-pause.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playlist/content/playback-controls/button-play.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playlist/content/playback-controls/button-prev.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playlist/content/playback-controls/button-stop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playlist/content/resize-corner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playlist/content/scroll.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playlist/content/text-field/TextField.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playlist/content/text-field/TextField.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playlist/content/utils.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/appSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/appSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/header/Header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/player/Player.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/Player.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/player/content/Content.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/content/Content.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/player/content/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/content/Content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/player/content/checkbox/Checkbox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/content/checkbox/Checkbox.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/player/content/position-range/PositionRange.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/content/position-range/PositionRange.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/player/content/position-range/PositionRange.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/content/position-range/PositionRange.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/player/content/range/Range.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/content/range/Range.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/player/content/range/Range.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/content/range/Range.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/player/content/song-name/SongName.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/content/song-name/SongName.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/player/content/static-media-info.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/content/static-media-info.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/player/content/status/Status.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/content/status/Status.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/player/content/status/Status.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/content/status/Status.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/player/content/time/Time.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/content/time/Time.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/player/content/time/Time.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/content/time/Time.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/player/pixelmix.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/pixelmix.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/player/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/playlist/Playlist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/playlist/Playlist.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/window/Window.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/window/Window.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/playlist/content/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/playlist/content/utils.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599222281363</updated>
       <workItem from="1599222282403" duration="43761000" />
-      <workItem from="1599431468938" duration="22721000" />
+      <workItem from="1599431468938" duration="24256000" />
     </task>
     <servers />
   </component>
