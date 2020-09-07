@@ -14,6 +14,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3314b099-197a-4794-a2a8-93b7b193c2bc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/public/songs/kanye-west_gold-digger.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/public/songs/kanye-west_gold-digger.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/appSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/appSlice.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/player/Player.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/Player.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599222281363</updated>
       <workItem from="1599222282403" duration="43761000" />
-      <workItem from="1599431468938" duration="25337000" />
+      <workItem from="1599431468938" duration="25664000" />
     </task>
     <servers />
   </component>

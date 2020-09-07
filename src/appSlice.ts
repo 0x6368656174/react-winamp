@@ -33,9 +33,9 @@ const playlist: File[] = [
     duration: 251,
   },
   {
-    name: 'Kanye West feat. Jamie Fox - Gold Digger',
+    name: 'Kanye West - Gold Digger',
     path: process.env.PUBLIC_URL + '/songs/kanye-west_gold-digger.mp3',
-    duration: 289,
+    duration: 207,
   },
   {
     name: 'Franz Ferdinand - Take Me Out',

@@ -43,15 +43,17 @@ function Player() {
     }
 
     switch (state) {
-      case 'paused':
+      case 'paused': {
         audio.pause();
         break;
-      case 'played':
+      }
+      case 'played': {
         if (audioContextRef.current) {
           audioContextRef.current.resume();
         }
         audio.play();
         break;
+      }
       case 'stopped': {
         audio.pause();
         audio.currentTime = 0;
