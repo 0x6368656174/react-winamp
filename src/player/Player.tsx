@@ -36,7 +36,6 @@ function Player() {
   }, [state, currentSong, audioRef]);
 
   const audioContextRef = useRef<AudioContext>();
-  const audioContextResumedRef = useRef(false);
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) {
@@ -48,13 +47,10 @@ function Player() {
         audio.pause();
         break;
       case 'played':
-        {
-          if (!audioContextResumedRef.current && audioContextRef.current) {
-            audioContextRef.current.resume();
-            audioContextResumedRef.current = true;
-          }
-          audio.play();
+        if (audioContextRef.current) {
+          audioContextRef.current.resume();
         }
+        audio.play();
         break;
       case 'stopped': {
         audio.pause();

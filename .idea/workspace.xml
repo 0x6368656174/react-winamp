@@ -13,7 +13,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3314b099-197a-4794-a2a8-93b7b193c2bc" name="Default Changelist" comment="" />
+    <list default="true" id="3314b099-197a-4794-a2a8-93b7b193c2bc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/player/Player.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/Player.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599222281363</updated>
       <workItem from="1599222282403" duration="43761000" />
-      <workItem from="1599431468938" duration="25015000" />
+      <workItem from="1599431468938" duration="25337000" />
     </task>
     <servers />
   </component>
