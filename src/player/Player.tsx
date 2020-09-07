@@ -35,6 +35,8 @@ function Player() {
     };
   }, [state, currentSong, audioRef]);
 
+  const audioContextRef = useRef<AudioContext>();
+  const audioContextResumedRef = useRef(false);
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) {
@@ -46,7 +48,13 @@ function Player() {
         audio.pause();
         break;
       case 'played':
-        audio.play();
+        {
+          if (!audioContextResumedRef.current && audioContextRef.current) {
+            audioContextRef.current.resume();
+            audioContextResumedRef.current = true;
+          }
+          audio.play();
+        }
         break;
       case 'stopped': {
         audio.pause();
@@ -81,6 +89,7 @@ function Player() {
       }
 
       const audioContext = new AudioContext();
+      audioContextRef.current = audioContext;
       const track = audioContext.createMediaElementSource(audio);
 
       stereoNodeRef.current = new StereoPannerNode(audioContext, { pan: 0 });
