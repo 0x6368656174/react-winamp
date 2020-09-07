@@ -1,0 +1,80 @@
+.time {
+  cursor: default;
+  display: flex;
+  user-select: none;
+}
+
+.noDash,
+.dash {
+  background-size: cover;
+  color: transparent;
+  height: 26px;
+  image-rendering: pixelated;
+  margin-right: 8px;
+  width: 14px;
+}
+
+.dash {
+  background-image: url('./dash.png');
+}
+
+.dots {
+  background-image: url('./dots.png');
+  background-size: cover;
+  color: transparent;
+  height: 26px;
+  image-rendering: pixelated;
+  width: 18px;
+}
+
+.number {
+  background-size: cover;
+  color: transparent;
+  height: 26px;
+  image-rendering: pixelated;
+  width: 18px;
+}
+
+.firstNumber {
+  margin-right: 6px;
+}
+
+.number0 {
+  background-image: url('./num-0.png');
+}
+
+.number1 {
+  background-image: url('./num-1.png');
+}
+
+.number2 {
+  background-image: url('./num-2.png');
+}
+
+.number3 {
+  background-image: url('./num-3.png');
+}
+
+.number4 {
+  background-image: url('./num-4.png');
+}
+
+.number5 {
+  background-image: url('./num-5.png');
+}
+
+.number6 {
+  background-image: url('./num-6.png');
+}
+
+.number7 {
+  background-image: url('./num-7.png');
+}
+
+.number8 {
+  background-image: url('./num-8.png');
+}
+
+.number9 {
+  background-image: url('./num-9.png');
+}

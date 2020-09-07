@@ -1,0 +1,102 @@
+.header {
+  align-items: center;
+  display: flex;
+  height: 28px;
+  opacity: 0.5;
+  padding-left: 6px;
+  padding-right: 4px;
+}
+
+.headerWinamp {
+  opacity: 1;
+}
+
+.icon {
+  height: 14px;
+  image-rendering: pixelated;
+  object-fit: cover;
+  width: 18px;
+}
+
+.logo {
+  height: 12px;
+  image-rendering: pixelated;
+  object-fit: cover;
+  width: 74px;
+}
+
+.logoPlaylist {
+  height: 12px;
+  image-rendering: pixelated;
+  object-fit: cover;
+  width: 164px;
+}
+
+.title {
+  align-items: center;
+  display: flex;
+  margin: 0;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.title::after,
+.title::before {
+  background-image: url('./top-bar-element.png');
+  background-size: contain;
+  content: '';
+  display: block;
+  height: 14px;
+  image-rendering: pixelated;
+  width: 181px;
+}
+
+.titlePlaylist {
+  margin-left: 0;
+}
+
+.titlePlaylist::before {
+  background-image: url('./left-top-bar-element-playlist.png');
+  width: 172px;
+}
+
+.titlePlaylist::after {
+  background-image: url('./right-top-bar-element-playlist.png');
+  width: 146px;
+}
+
+.title::before {
+  margin-right: 6px;
+}
+
+.title::after {
+  margin-left: 6px;
+}
+
+.button {
+  appearance: none;
+  background-color: transparent;
+  background-size: cover;
+  border-style: none;
+  color: transparent;
+  height: 14px;
+  image-rendering: pixelated;
+  margin-right: 6px;
+  width: 14px;
+}
+
+.button:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.buttonMin {
+  background-image: url('./min.png');
+}
+
+.buttonMax {
+  background-image: url('./max.png');
+}
+
+.buttonClose {
+  background-image: url('./close.png');
+}

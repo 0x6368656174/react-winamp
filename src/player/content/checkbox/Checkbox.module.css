@@ -1,0 +1,88 @@
+.eq,
+.pl {
+  appearance: none;
+  background-size: cover;
+  height: 22px;
+  image-rendering: pixelated;
+  margin: 0;
+  outline: none;
+  width: 45px;
+}
+
+.eq {
+  background-image: url('./eq.png');
+}
+
+.eq:checked {
+  background-image: url('./eq-checked.png');
+}
+
+.eq:active {
+  background-image: url('./eq-active.png');
+}
+
+.eq:checked:active {
+  background-image: url('./eq-checked-active.png');
+}
+
+.pl {
+  background-image: url('./pl.png');
+}
+
+.pl:checked {
+  background-image: url('./pl-checked.png');
+}
+
+.pl:active {
+  background-image: url('./pl-active.png');
+}
+
+.pl:checked:active {
+  background-image: url('./pl-checked-active.png');
+}
+
+.shuffle {
+  appearance: none;
+  background-image: url('./shuffle.png');
+  background-size: cover;
+  height: 28px;
+  image-rendering: pixelated;
+  margin: 0;
+  outline: none;
+  width: 91px;
+}
+
+.shuffle:checked {
+  background-image: url('./shuffle-checked.png');
+}
+
+.shuffle:active {
+  background-image: url('./shuffle-active.png');
+}
+
+.shuffle:checked:active {
+  background-image: url('./shuffle-checked-active.png');
+}
+
+.repeat {
+  appearance: none;
+  background-image: url('./repeat.png');
+  background-size: cover;
+  height: 28px;
+  image-rendering: pixelated;
+  margin: 0;
+  outline: none;
+  width: 47px;
+}
+
+.repeat:checked {
+  background-image: url('./repeat-checked.png');
+}
+
+.repeat:active {
+  background-image: url('./repeat-active.png');
+}
+
+.repeat:checked:active {
+  background-image: url('./repeat-checked-active.png');
+}

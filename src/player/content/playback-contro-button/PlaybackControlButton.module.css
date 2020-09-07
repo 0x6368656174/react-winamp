@@ -1,0 +1,59 @@
+.playbackControl {
+  appearance: none;
+  background-color: transparent;
+  background-size: cover;
+  border-style: none;
+  color: transparent;
+  height: 34px;
+  image-rendering: pixelated;
+  outline: none;
+  width: 44px;
+}
+
+.prev {
+  background-image: url('./prev.png');
+}
+
+.play {
+  background-image: url('./play.png');
+}
+
+.pause {
+  background-image: url('./pause.png');
+}
+
+.stop {
+  background-image: url('./stop.png');
+}
+
+.next {
+  background-image: url('./next.png');
+}
+
+.eject {
+  background-image: url('./eject.png');
+}
+
+.prev:active {
+  background-image: url('./prev-active.png');
+}
+
+.play:active {
+  background-image: url('./play-active.png');
+}
+
+.pause:active {
+  background-image: url('./pause-active.png');
+}
+
+.stop:active {
+  background-image: url('./stop-active.png');
+}
+
+.next:active {
+  background-image: url('./next-active.png');
+}
+
+.eject:active {
+  background-image: url('./eject-active.png');
+}

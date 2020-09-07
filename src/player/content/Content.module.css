@@ -1,0 +1,106 @@
+.content {
+  background: linear-gradient(
+    92.53deg,
+    #212132 7.06%,
+    #2b2a43 46.04%,
+    #383759 82.14%,
+    #201f31 105.83%
+  );
+  border-left: 2px solid #59596d;
+  border-top: 2px solid #59596d;
+  display: flex;
+  flex-direction: column;
+  height: 201px;
+}
+
+.statusAndSongInfo {
+  display: flex;
+  margin-top: 12px;
+}
+
+.status {
+  margin-left: 23px;
+}
+
+.staticMediaInfo {
+  height: 34px;
+  image-rendering: pixelated;
+  margin-top: 10px;
+  object-fit: cover;
+  width: 301px;
+}
+
+.rightInfo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+  margin-right: 8px;
+  width: 100%;
+}
+
+.controls {
+  align-items: center;
+  display: flex;
+}
+
+.volumeControl {
+  width: 108px;
+}
+
+.balanceControl {
+  margin-left: 10px;
+  width: 66px;
+}
+
+.eq {
+  margin-left: auto;
+}
+
+.pl {
+  margin-left: 6px;
+}
+
+.position {
+  margin-left: 23px;
+  margin-right: 7px;
+  margin-top: 8px;
+}
+
+.lastRow {
+  align-items: center;
+  display: flex;
+  margin-bottom: 15px;
+  margin-left: 23px;
+  margin-top: 18px;
+}
+
+.firstPlaybackControls {
+  display: flex;
+  margin-right: 10px;
+}
+
+.firstPlaybackControls > * {
+  margin-right: 2px;
+}
+
+.firstPlaybackControls > *:nth-last-of-type(1) {
+  margin-right: 0;
+}
+
+.shuffle {
+  margin-left: 14px;
+}
+
+.repeat {
+  margin-left: 8px;
+}
+
+.winampLogo {
+  bottom: 7px;
+  height: 37px;
+  image-rendering: pixelated;
+  object-fit: cover;
+  position: absolute;
+  right: 7px;
+  width: 37px;
+}

@@ -1,0 +1,20 @@
+.window {
+  background: linear-gradient(90deg, #151521 15.63%, #302e4b 44.79%, #31304d 78.13%, #1b1b2b 100%);
+  border-left: solid 2px #6a6a79;
+  border-right: 2px;
+  border-top: solid 2px #6a6a79;
+  overflow: hidden;
+  width: 546px;
+}
+
+.content {
+  border-bottom: 2px solid #59596d;
+  border-right: 2px solid #59596d;
+  border-top: 3px solid #151521;
+  margin-bottom: 6px;
+  margin-left: 7px;
+  margin-right: 3px;
+  padding-bottom: 3px;
+  padding-right: 3px;
+  position: relative;
+}

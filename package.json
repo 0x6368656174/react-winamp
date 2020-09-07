@@ -3,16 +3,29 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.4.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@types/jest": "^24.0.0",
+    "@types/jsmediatags": "^3.9.1",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "@types/react-redux": "^7.1.9",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "jsmediatags": "^3.9.3",
+    "lint-staged": "^10.3.0",
+    "prettier": "^2.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
     "react-scripts": "3.4.3",
+    "stylelint": "^13.7.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
     "typescript": "~3.7.2"
   },
   "scripts": {
@@ -21,8 +34,27 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 100
+  },
   "eslintConfig": {
-    "extends": "react-app"
+    "plugins": [
+      "prettier"
+    ],
+    "extends": [
+      "react-app",
+      "plugin:prettier/recommended"
+    ]
+  },
+  "stylelint": {
+    "plugins": [
+      "stylelint-order"
+    ],
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "order/properties-alphabetical-order": true
+    }
   },
   "browserslist": {
     "production": [
@@ -35,5 +67,22 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{css,scss}": [
+      "stylelint --fix",
+      "prettier --write --ignore-unknown"
+    ],
+    "*.{ts,js,tsx}": [
+      "eslint --fix",
+      "prettier --write --ignore-unknown"
+    ],
+    "*.{json,html,md}": "prettier --write --ignore-unknown",
+    "*.png": "optipng -strip all -o4"
   }
 }

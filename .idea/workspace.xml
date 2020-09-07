@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3314b099-197a-4794-a2a8-93b7b193c2bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/appSlice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/header/Header.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/header/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/header/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/header/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/header/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/header/max.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/header/min.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/header/top-bar-element.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/player/Player.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/player/Player.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/player/content/Content.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/player/content/Content.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/player/content/checkbox/Checkbox.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/player/content/checkbox/Checkbox.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/player/content/graphic-visualize/GraphicVisualize.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/player/content/position-range/PositionRange.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/player/content/position-range/PositionRange.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/player/content/range/Range.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/player/content/range/Range.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/player/content/song-name/SongName.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/player/content/song-name/SongName.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/player/content/status/Status.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/player/content/status/Status.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/player/content/time/Time.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/player/content/time/Time.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/player/pixelmix.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/player/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/playlist/Playlist.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/window/Window.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/window/Window.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serviceWorker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1h2w1k4GShaAmlb5g1ydiihthtq" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.stylelint" value="$PROJECT_DIR$/node_modules/stylelint" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/src/player/content/slider" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/player/content" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/player/content/blaybackControlButton" />
+      <recent name="$PROJECT_DIR$/src/player/content/positionRange" />
+      <recent name="$PROJECT_DIR$/src/player" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3314b099-197a-4794-a2a8-93b7b193c2bc" name="Default Changelist" comment="" />
+      <created>1599222281363</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599222281363</updated>
+      <workItem from="1599222282403" duration="43761000" />
+      <workItem from="1599431468938" duration="3540000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="360" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599441916061">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="360" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1599441916061" />
+    <state x="610" y="369" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599441178416">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="610" y="369" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1599441178416" />
+    <state x="634" y="314" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599293487111">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="634" y="314" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1599293487111" />
+    <state x="397" y="199" key="SettingsEditor" timestamp="1599433790530">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="397" y="199" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1599433790530" />
+    <state x="597" y="315" width="598" height="490" key="find.popup" timestamp="1599299582768">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="597" y="315" width="598" height="490" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1599299582768" />
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1599299179616">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1599299179616" />
+  </component>
+</project>
