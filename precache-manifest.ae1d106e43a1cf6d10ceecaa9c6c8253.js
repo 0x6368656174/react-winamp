@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ce50b7aa173541d094906494c6d57378",
+    "revision": "720fe32faebd7db87a42b6e697a7f09a",
     "url": "/react-winamp/index.html"
   },
   {
-    "revision": "8ff3c4c7ccea70a2f1bc",
+    "revision": "cc8d9e1faf2f6650c627",
     "url": "/react-winamp/static/css/main.69673f9b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-winamp/static/js/2.ffa5ee0f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8ff3c4c7ccea70a2f1bc",
-    "url": "/react-winamp/static/js/main.6e88b61a.chunk.js"
+    "revision": "cc8d9e1faf2f6650c627",
+    "url": "/react-winamp/static/js/main.06d68574.chunk.js"
   },
   {
     "revision": "8d28e736a61ad20a2b86",
