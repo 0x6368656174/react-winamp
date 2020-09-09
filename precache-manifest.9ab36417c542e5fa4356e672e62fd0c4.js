@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3be185eca7a881e8c831ab3f6e6a29ac",
+    "revision": "18a5b41dc79371b0e10560609ca2790b",
     "url": "/react-winamp/index.html"
   },
   {
