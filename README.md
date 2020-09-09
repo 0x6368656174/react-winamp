@@ -4,6 +4,8 @@ as a function. Work with the Audio Web API is implemented ([Player.tsx](https://
 custom animation ([SongName.tsx](https://github.com/0x6368656174/react-winamp/blob/master/src/player/content/song-name/SongName.tsx))
 and working with canvas ([GraphicVisualize.tsx](https://github.com/0x6368656174/react-winamp/blob/master/src/player/content/graphic-visualize/GraphicVisualize.tsx)).
 
+The project has GitHub Actions configured, which automatically expands it into GitHub Pages: [React WINAMP](https://0x6368656174.github.io/react-winamp/).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -35,6 +37,10 @@ It correctly bundles React in production mode and optimizes the build for the be
 ([Player.tsx](https://github.com/0x6368656174/react-winamp/blob/master/src/player/Player.tsx)), кастомная анимация
 ([SongName.tsx](https://github.com/0x6368656174/react-winamp/blob/master/src/player/content/song-name/SongName.tsx)) и работа с canvas
 ([GraphicVisualize.tsx](https://github.com/0x6368656174/react-winamp/blob/master/src/player/content/graphic-visualize/GraphicVisualize.tsx)).
+
+В проекте настроен GitHub Actions, который автоматически разворачивает его в GitHub Pages: [React WINAMP](https://0x6368656174.github.io/react-winamp/).
+
+Этот проект развернут при помощи [Create React App](https://github.com/facebook/create-react-app).
 
 ## Доступные Скрипты
 
