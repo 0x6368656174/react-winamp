@@ -1,3 +1,9 @@
+This is a demo project for react.js. It implements the basic interface of the classic WINAMP.
+The project uses only react.js and redux without any third-party dependencies. All components are written
+as a function. Work with the Audio Web API is implemented ([Player.tsx](https://github.com/0x6368656174/react-winamp/blob/master/src/player/Player.tsx)),
+custom animation ([SongName.tsx](https://github.com/0x6368656174/react-winamp/blob/master/src/player/content/song-name/SongName.tsx))
+and working with canvas ([GraphicVisualize.tsx](https://github.com/0x6368656174/react-winamp/blob/master/src/player/content/graphic-visualize/GraphicVisualize.tsx)).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -15,30 +21,38 @@ You will also see any lint errors in the console.
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `yarn build`
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Это демо проект на react.js. В нем реализован базовый интерфейс классического WINAMP. В проекте
+использован только react.js и redux без каких либо сторонних зависимостей. Все компоненты
+написаны в виде функции. Реализована работа с Audio Web API
+([Player.tsx](https://github.com/0x6368656174/react-winamp/blob/master/src/player/Player.tsx)), кастомная анимация
+([SongName.tsx](https://github.com/0x6368656174/react-winamp/blob/master/src/player/content/song-name/SongName.tsx)) и работа с canvas
+([GraphicVisualize.tsx](https://github.com/0x6368656174/react-winamp/blob/master/src/player/content/graphic-visualize/GraphicVisualize.tsx)).
 
-### `yarn eject`
+## Доступные Скрипты
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+В директории с проектом вы можете запустить:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `yarn start`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Запустит приложение в режиме разработки.<br />
+Откройте [http://localhost:3000](http://localhost:3000) для просмотра его в браузере.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Данная страница будет перезагружаться, если вы сделаете изменения.<br />
+Вы так же будите видеть любые ошибки литера в консоле.
 
-## Learn More
+### `yarn test`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Запустит выполнение тестов в инетактивном режиме наблюдения. <br />
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `yarn build`
+
+Соберет приложение в режиме продакшена в папке `build`. <br />
+Это корректно сделает бандл React'а в режиме продакшена и оптимизирует сборку для лучшей производительности.
